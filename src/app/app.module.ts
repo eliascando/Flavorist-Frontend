@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/register/register.component';
 import { IngresarComponent } from './components/ingresar/ingresar.component';
+import { DetallePostComponent } from './components/detalle-post/detalle-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    IngresarComponent
+    IngresarComponent,
+    DetallePostComponent
   ],
   imports: [
     BrowserModule,
