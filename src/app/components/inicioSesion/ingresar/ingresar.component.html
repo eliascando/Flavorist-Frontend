@@ -1,0 +1,17 @@
+      <div class="form-container">
+      <h2>Bienvenido a Flavorist</h2>
+      <h3>Ingresa tu cuenta</h3>
+      <img src="../../../assets/logo-small.svg" alt="Logo" class="form-logo">
+      <form [formGroup]="form" (ngSubmit)="iniciarSesion()">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Tu email" class="rounded-input" formControlName="email">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Tu contraseña" class="rounded-input" formControlName="password">
+        
+          <button type="submit" class="continue-btn" onclick="iniciarSesion()">Iniciar Sesion</button>
+          <p class="or-separator">o</p>
+          <button type="button" class="google-btn">
+              <img src="../../../assets/img/logo-google.png" alt="Google logo"> Continuar con Google
+          </button>
+      </form>
+    </div>

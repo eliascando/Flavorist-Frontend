@@ -3,40 +3,73 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RegistroComponent } from './components/registro/registro.component';
-import { IngresarComponent } from './components/ingresar/ingresar.component';
-<<<<<<< HEAD
-import { DetallePostComponent } from './components/detalle-post/detalle-post.component';
-=======
-import { PerfilComponent } from './components/perfil/perfil.component';
-import { NotificationComponent } from './components/notification/notification.component';
-import { HeaderComponent } from './components/header/header.component';
+import { RegistroComponent } from './components/inicioSesion/registro/registro.component';
+import { IngresarComponent } from './components/inicioSesion/ingresar/ingresar.component';
+import { PerfilComponent } from './components/mainScreen/perfil/perfil.component';
+import { NotificationComponent } from './components/mainScreen/notification/notification.component';
+import { HeaderComponent } from './components/inicioSesion/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
->>>>>>> 3a4f0f906ba48d5368cc4e6609c45380b3b40204
+import { MainComponent } from './components/main/main.component';
+import { RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+import { FeedComponent } from './components/mainScreen/feed/feed.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-    LoginComponent,
-    IngresarComponent,
-    DetallePostComponent
-=======
     RegistroComponent,
     IngresarComponent,
     PerfilComponent,
     NotificationComponent,
-    HeaderComponent,   
->>>>>>> 3a4f0f906ba48d5368cc4e6609c45380b3b40204
+    HeaderComponent,
+    MainComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    RouterLink,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatTableModule,
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, Router]
 })
 
 export class AppModule { }

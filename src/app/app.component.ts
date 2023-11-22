@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Flavorist-Frontend';
+  public ingresarMenu: boolean = false;
+
+  constructor() {
+    this.ingresarMenu = false;
+  }
+
+  public mostrarIngreso(): void {
+    this.ingresarMenu = true;
+  }
+
 }
