@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './ingresar.component.html',
   styleUrls: ['./ingresar.component.css']
 })
-export class IngresarComponent {
 
+export class IngresarComponent {
 }
