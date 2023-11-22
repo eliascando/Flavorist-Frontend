@@ -12,8 +12,9 @@ body, html {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: start; /* Alineación al inicio para permitir el efecto escalonado */
-  }
+    align-items: flex-start  
+
+}
   
   .image-column {
     display: flex;
@@ -222,4 +223,3 @@ body, html {
   .member-question {
     font-size: 0.8em;
   }
-  

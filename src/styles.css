@@ -3,3 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins', sans-serif; }
 
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Ajusta según sea necesario */
+  }
